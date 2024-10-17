@@ -9,7 +9,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-
+height: 1000vh;
 
 }
 
@@ -56,13 +56,24 @@ body {
 
 /* start hero */
 .hero {
-    background-image: url('../images/hero.jpeg');
+    background-image: url('../images/hero2.png');
+    background-color: #D4505A;
     background-size: cover;
+    background-position: center;
+    background-position-y: 25%;
+    position: relative;
+    right: 100;
     background-repeat: no-repeat;
-    width: 100%;
+    max-width: 100%;
     height: calc(100vh - 88px);
-    background-position-y: 17%;
 }
+
+@media (max-width:1024px) { 
+    .herp p {
+        font-size: 4rem;
+    }
+}
+
 
 .hero .content {
     text-align: center;
@@ -75,13 +86,20 @@ body {
 
 .hero .text {
     font-family: 'Sansation';
-    font-size: 96px;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 96px;
     text-align: start;
     width: fit-content;
     color: #fff;
 
+}
+
+@media (max-width: 1024px) {
+    .hero .text {
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 .hero .text p {
@@ -98,7 +116,7 @@ body {
     border: 1px solid #DADBDF;
     cursor: pointer;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: 'Poppins';
     padding: 20px 3.188rem;
 }
 
