@@ -140,6 +140,12 @@ body {
     text-decoration: none;
     font-family: 'Poppins';
     padding: 20px 3.188rem;
+    transition: all 0.3s linear;
+}
+
+.hero a:hover {
+    background-color: #FF2753EE;
+    color: #fff;
 }
 
 /* end hero */
@@ -198,6 +204,11 @@ body {
     padding: 6px 35px;
     margin-top: 32px;
     margin-left: 12px;
+}
+
+.details .content a:hover {
+    background-color: #fff;
+    color: #FF2753;
 }
 
 @media (max-width: 1199px) {
