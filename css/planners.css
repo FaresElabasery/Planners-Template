@@ -16,6 +16,30 @@ body {
     height: 88px;
 }
 
+@media (max-width: 991px) {
+    .links-section {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        margin-top: 27px;
+    }
+
+    .links-section a {
+        margin: 10px auto;
+        font-weight: 500;
+        font-size: 24px;
+        width: 75%;
+        border-radius: 40px;
+        background-color: #fff;
+        color: #FF2753;
+    }
+
+    .last-section {
+        display: none;
+    }
+
+}
+
 .navbar .brand-name {
     padding: 10px 16px 13px;
     border-right: 1px solid #9C9696;
@@ -182,7 +206,8 @@ body {
         text-align: center;
         padding: 0;
     }
-    .details{
+
+    .details {
         height: auto;
         margin-top: -24px;
     }
@@ -191,6 +216,7 @@ body {
         font-size: 40px;
         margin-top: -40px;
     }
+
     .details img {
         display: none;
     }
