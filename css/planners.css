@@ -179,10 +179,12 @@ body {
 @media (max-width: 1199px) {
     .details .content {
         grid-template-columns: 1fr;
-        height: 70vh;
         text-align: center;
         padding: 0;
-        
+    }
+    .details{
+        height: auto;
+        margin-top: -24px;
     }
 
     .details .content .box .text h2 {
