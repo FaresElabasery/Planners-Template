@@ -1,0 +1,105 @@
+:root {
+    --main-color: #fff
+}
+
+* {}
+
+body {
+    background-color: var(--main-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+
+}
+
+/* start navbar */
+.navbar {
+    height: 88px;
+}
+
+.navbar .brand-name {
+    padding: 10px 16px 13px;
+    border-right: 1px solid #9C9696;
+    margin-right: 32px;
+    font-family: 'Sansita Swashed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(123, 84, 242, 0.84) 0%, rgba(153, 0, 221, 0.653333) 0%, rgba(255, 102, 126, 0.84) 75%, rgba(255, 171, 111, 0.871111) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar .links-section {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.navbar .links-section a {
+    padding: 10px;
+}
+
+.navbar .links-section .active,
+.navbar .links-section a:hover,
+.navbar .links-section a:focus {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    font-weight: 600;
+}
+
+/* end navbar */
+
+
+/* start hero */
+.hero {
+    background-image: url('../images/hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 88px);
+    background-position-y: 17%;
+}
+
+.hero .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 386px;
+}
+
+.hero .text {
+    font-family: 'Sansation';
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: start;
+    width: fit-content;
+    color: #fff;
+
+}
+
+.hero .text p {
+    margin-bottom: 1.6rem;
+}
+
+.hero a {
+    background-color: #fff;
+    color: #FF2753EE;
+    font-weight: 600;
+    font-size: 24px;
+    border-radius: 40px;
+    line-height: 24px;
+    border: 1px solid #DADBDF;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Poppins;
+    padding: 20px 3.188rem;
+}
+
+/* end hero */
