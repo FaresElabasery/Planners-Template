@@ -2,14 +2,17 @@
     --main-color: #fff
 }
 
-* {}
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: var(--main-color);
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-height: 1000vh;
+    height: 1000vh;
 
 }
 
@@ -68,7 +71,7 @@ height: 1000vh;
     height: calc(100vh - 88px);
 }
 
-@media (max-width:1024px) { 
+@media (max-width:1024px) {
     .herp p {
         font-size: 4rem;
     }
@@ -121,3 +124,43 @@ height: 1000vh;
 }
 
 /* end hero */
+
+/* start details */
+
+.details {
+    background-color: #FFF5FE;
+    height: calc(100vh - 88px);
+}
+
+.details .content {
+    padding: 100px 61px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    height: 560px;
+}
+
+.details img {
+    width: 100%;
+    height: auto;
+}
+.details .content .box .text{
+    padding: 0 1rem;
+}
+.details .content .box .text h2 {
+    font-family: 'Poppins';
+    font-size: 48px;
+    padding-top: 50px;
+margin-bottom: 40px;
+}
+.details .content .box .text p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+/* end details */
