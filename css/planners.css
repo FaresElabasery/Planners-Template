@@ -224,6 +224,10 @@ body {
     .details .content .box .text p {
         font-size: 18px;
     }
+
+    .details a {
+        margin-left: 0 !important;
+    }
 }
 
 /* end details */
