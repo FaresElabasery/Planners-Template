@@ -217,41 +217,52 @@ body {
         margin-left: 0 !important;
     }
 }
+
 @media (min-width: 991px) {
-    .details .text h2{
-        font-size: 40px!important;
+    .details .text h2 {
+        font-size: 40px !important;
     }
 }
 
 /* end details */
 /* start category */
-.cagetory .main-title{
+.cagetory .main-title {
     font-family: Poppins;
 }
-.cagetory .main-title h2{
+
+.cagetory .main-title h2 {
     color: #0D0D0D;
     font-weight: 700;
     font-size: 32px;
 }
-.cagetory .main-title p{
+
+.cagetory .main-title p {
     color: #0D0D0D;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 }
 
-.cagetory img{
+.cagetory img {
     width: 100%;
     border-radius: 5px;
     transition: all 0.3s linear;
 }
-.cagetory img:hover{
+
+.cagetory .row div:hover {
     transform: scale(1.01);
 }
-.category .row h3{
+
+.category .row h3 {
     font-weight: 600;
-    font-size: 1rem ;
+    font-size: 1rem;
     color: #333333;
+}
+
+@media (max-width:768px) {
+    .cagetory .main-title p {
+        font-size: 18px;
+    }
 }
 
 /* end category */
