@@ -352,6 +352,21 @@ body {
     height: 301px;
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .popular .box .text {
     position: absolute;
     left: 50%;
@@ -479,7 +494,7 @@ body {
     padding: 3px 8px;
     background-color: #FF2753;
     color: #fff;
-    top: 160px;
+    top: 100px;
     right: 40px;
     font-size: 20px;
     cursor: pointer;
