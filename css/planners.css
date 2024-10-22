@@ -285,11 +285,11 @@ body {
 
 /* start popular */
 .popular {
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .popular .row {
-    margin-top: 148px;
+    margin-top: 150px;
 }
 
 .popular .box {
@@ -503,7 +503,9 @@ body {
     background-color: #fff;
     color: #FF2753;
 }
-
+.popular .row .last-sections{
+    margin-top: -20px;
+}
 .popular .row .last-sections a {
     background-color: #fff;
     color: #FF2753EE;

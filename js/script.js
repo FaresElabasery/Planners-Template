@@ -36,7 +36,7 @@ function changeIcon(obj) {
         <i onclick="changeIcon(this)" class="fa-regular fa-circle rounded-circle hover-color-3 m-1"></i>
         <i onclick="changeIcon(this)"class="fa-solid fa-circle color-4 m-1"></i>
         `
-        imgElement.innerHTML = `  <img class="img-fluid" src="images/popular-2.svg" alt="planner">`
+        imgElement.innerHTML = `  <img class="img-fluid" src="images/popular-4.svg" alt="planner">`
     } else if (obj.classList.contains('color-4')) {
         // Perform actions when obj has class name color-1
         circleElement.style.backgroundColor = 'var(--green-color)';
