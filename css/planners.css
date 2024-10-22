@@ -289,7 +289,7 @@ body {
 }
 
 .popular .row {
-    margin-top: 150px;
+    margin: 150px auto;
 }
 
 .popular .box {
@@ -439,8 +439,8 @@ body {
 
 .popular .box .text .colors .color-3 {
     color: #fff;
-    background-color: #AEAEAE;
-    border-radius: 12px;
+    outline: 1px solid #AEAEAE;
+    border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
 }
@@ -472,12 +472,12 @@ body {
     color: #fff;
     text-wrap: nowrap;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 40px;
     cursor: pointer;
     text-decoration: none;
     font-family: 'Poppins';
-    padding: 5px 1rem;
+    padding: 11px 22px;
     transition: all 0.3s linear;
 }
 
@@ -503,9 +503,11 @@ body {
     background-color: #fff;
     color: #FF2753;
 }
-.popular .row .last-sections{
+
+.popular .row .last-sections {
     margin-top: -20px;
 }
+
 .popular .row .last-sections a {
     background-color: #fff;
     color: #FF2753EE;
