@@ -4,6 +4,7 @@
     --purple-color: #F6DCFF;
     --green-color: #DDE8C1;
     --white-color: #fff;
+    --hovered-color: #C85ED7;
 
 }
 
@@ -13,11 +14,12 @@ body {
     font-weight: 100;
     font-style: normal;
     height: 1000vh;
+    user-select: none;
 }
 
 /* start navbar */
 .navbar {
-    height: 88px;
+    height: 80px;
 }
 
 @media (max-width: 991px) {
@@ -61,20 +63,35 @@ body {
 }
 
 .navbar .links-section {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
+    color: #404040;
 }
 
 .navbar .links-section a {
-    padding: 10px;
+    padding: 26px;
+    transition: all 0.3s linear;
 }
 
 .navbar .links-section .active,
 .navbar .links-section a:hover,
 .navbar .links-section a:focus {
-    transform: scale(1.1);
-    transition: all 0.3s linear;
     font-weight: 600;
+    color: #C85ED7 !important;
+    border-bottom: 4px solid #C85ED7;
+}
+
+.navbar .last-section ul li:nth-child(2)::after {
+    font-size: 12px;
+    content: attr(cart-number);
+    background-color: var(--hovered-color);
+    position: absolute;
+    padding: 1px 6px;
+    border-radius: 50%;
+    font-weight: 500;
+    color: #fff;
+    top: 5px;
+    right: 1px;
 }
 
 /* end navbar */

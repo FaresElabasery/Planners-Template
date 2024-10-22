@@ -37,30 +37,30 @@
             </button>
             <div class="collapse navbar-collapse links-section " id="navbarNav">
                 <ul class="navbar-nav gap-4 justify-content-between ">
-                    <li class="nav-item ms-1 overflow-hidden">
-                        <a class=" nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item ms-2 overflow-hidden">
+                        <a class="nav-link active fw-medium" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item ms-1">
-                        <a class="nav-link" href="#shop">Shop</a>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link fw-medium" href="#shop">Shop</a>
                     </li>
-                    <li class="nav-item ms-1">
-                        <a class="nav-link" href="#contactUs">Contact Us</a>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link fw-medium" href="#contactUs">Contact Us</a>
                     </li>
-                    <li class="nav-item ms-1">
-                        <a class="nav-link" href="#ourPolices">Our Polices</a>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link fw-medium" href="#ourPolices">Our Polices</a>
                     </li>
                 </ul>
             </div>
-            <div class="links-section last-section collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav gap-3 me-4 pe-2">
+            <div class=" last-section collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav d-flex me-4 p-3">
                     <li class="nav-item ms-1 p-1">
-                        <a class="nav-link" href="#"><img src="images/about.svg" alt="About"></a>
+                        <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)" onmouseleave="changeNavDef(this,this.id)" src="images/search.svg" id="search" alt="search"></a>
+                    </li>
+                    <li id="cart-box" class="nav-item ms-1 p-1 position-relative">
+                        <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)" onmouseleave="changeNavDef(this,this.id)" src="images/cart.svg" id="cart" alt="cart"></a>
                     </li>
                     <li class="nav-item ms-1 p-1">
-                        <a class="nav-link" href="#"><img src="images/search.svg" alt="search"></a>
-                    </li>
-                    <li class="nav-item ms-1 p-1">
-                        <a class="nav-link" href="#"><img src="images/bag.svg" alt="cart"></a>
+                        <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)" onmouseleave="changeNavDef(this,this.id)" src="images/profile.svg" id="profile" alt="About"></a>
                     </li>
                 </ul>
             </div>
@@ -148,7 +148,7 @@
                                 <i onclick="changeIcon(this)" class="fa-solid fa-circle color-4 m-1"></i>
 
                             </div>
-                            <a href="#" class="main-btn">Add to Cart</a>
+                            <a   onclick="addItem()" onclick="addItem()"class="main-btn">Add to Cart</a>
                         </div>
                         <div class="heart rounded-circle">
                             <i onclick="changeHeart(this)" class="fa-regular regular fa-heart"></i>
@@ -174,7 +174,7 @@
                                 <i onclick="changeIcon(this)" class="fa-solid fa-circle color-4 m-1"></i>
 
                             </div>
-                            <a href="#" class="main-btn">Add to Cart</a>
+                            <a  onclick="addItem()"class="main-btn">Add to Cart</a>
                         </div>
                         <div class="heart rounded-circle">
                             <i onclick="changeHeart(this)" class="fa-regular regular fa-heart"></i>
@@ -201,7 +201,7 @@
                                     class="fa-regular fa-circle rounded-circle hover-color-4 m-1"></i>
 
                             </div>
-                            <a href="#" class="main-btn">Add to Cart</a>
+                            <a  onclick="addItem()"class="main-btn">Add to Cart</a>
                         </div>
                         <div class="heart rounded-circle">
                             <i onclick="changeHeart(this)" class="fa-regular regular fa-heart"></i>
@@ -210,7 +210,7 @@
                     </div>
                 </div>
                 <div class="last-sections">
-                    <a href="#" class="btn main-btn">Show More</a>
+                    <a  class="btn main-btn">Show More</a>
                 </div>
             </div>
 

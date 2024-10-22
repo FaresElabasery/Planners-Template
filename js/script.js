@@ -40,7 +40,7 @@ function changeIcon(obj) {
     } else if (obj.classList.contains('color-4')) {
         // Perform actions when obj has class name color-1
         circleElement.style.backgroundColor = 'var(--green-color)';
-        
+
         parent.innerHTML = `  
         <i onclick="changeIcon(this)"class="fa-solid fa-circle color-1 m-1"></i>
         <i onclick="changeIcon(this)"class="fa-solid fa-circle color-2 rounded-circle m-1"></i>
@@ -61,4 +61,26 @@ function changeHeart(obj) {
         parent.innerHTML = `<i onclick="changeHeart(this)" class="fa-regular regular fa-heart"></i>`
 }
 
-addEventListener('click',changeIcon )
+
+
+
+function changeNav(obj, id) {
+    obj.src = `images/${id}-hover.svg`
+}
+function changeNavDef(obj, id) {
+    obj.src = `images/${id}.svg`
+}
+
+document.documentElement.style.setProperty('--hovered-color', '#fff');
+
+var cartBox = document.getElementById('cart-box');
+var i = 1
+function addItem(obj) {
+    cartBox.setAttribute('cart-number', `${i}`);
+    i++
+    document.documentElement.style.setProperty('--hovered-color', '#C85ED7');
+}
+
+
+
+
