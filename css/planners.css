@@ -528,3 +528,42 @@ body {
 }
 
 /* end popular */
+
+
+/* start About */
+.about{
+    margin: -16px 169px;
+}
+.about .row .text{
+    margin: 113px 0;
+    padding-right: 24px;
+}
+.about .row .text .title h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.about .row .text .title p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 48px;
+    line-height: 160%;
+    color: #585E71;
+}
+.about .row .feedback-text{
+    padding-left: 10px ;
+}
+.about .row .feedback-text h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-top: 14px;
+}
+.about .row .feedback-text p{
+    font-size: 14px;
+    font-weight: 400;
+    margin:0;
+    padding-bottom: 14px;
+}
+
+/* end About */
