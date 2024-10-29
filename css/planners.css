@@ -13,7 +13,6 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-    height: 1000vh;
     user-select: none;
 }
 
@@ -531,39 +530,129 @@ body {
 
 
 /* start About */
-.about{
+.about {
     margin: -16px 169px;
 }
-.about .row .text{
+
+.about .row .text {
     margin: 113px 0;
     padding-right: 24px;
 }
-.about .row .text .title h2{
+
+.about .row .text .title h2 {
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 15px;
 }
-.about .row .text .title p{
+
+.about .row .text .title p {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 48px;
     line-height: 160%;
     color: #585E71;
 }
-.about .row .feedback-text{
-    padding-left: 10px ;
+
+.about .row .feedback-text {
+    padding-left: 10px;
 }
-.about .row .feedback-text h4{
+
+.about .row .feedback-text h4 {
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 8px;
     padding-top: 14px;
 }
-.about .row .feedback-text p{
+
+.about .row .feedback-text p {
     font-size: 14px;
     font-weight: 400;
-    margin:0;
+    margin: 0;
     padding-bottom: 14px;
 }
 
 /* end About */
+
+/* Start Footer */
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: #FFF5FE;
+    display: flex;
+    padding: 100px 155px 20px 156px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    padding: 0;
+    padding-left:24px ;
+    padding-right:30px ;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+footer h5 {
+    color: #242424;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+footer .footer-contact {
+    width: 296px;
+}
+
+footer .footer-contact .logo {
+    margin-bottom: 36px;
+}
+
+footer .footer-contact p {
+    color: rgba(0, 0, 0, 0.85);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+footer .footer-contact div:first-of-type {
+    margin-top: 27px;
+    margin-bottom: 4px;
+}
+
+
+footer .copyright {
+    margin-top: 117px;
+}
+
+footer .copyright p {
+    color: #545454;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.257px;
+    margin-top: 27px;
+}
+
+
+/* end Footer */
