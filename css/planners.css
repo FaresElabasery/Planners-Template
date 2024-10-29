@@ -533,10 +533,24 @@ body {
 .about {
     margin: -16px 169px;
 }
+@media (max-width:768px) {
+    .about {
+        margin: -16px 5px;
+    }
+}
 
 .about .row .text {
     margin: 113px 0;
     padding-right: 24px;
+}
+@media (max-width:991px) {
+    
+    .about .row .text {
+        text-align: center;
+        margin: 60px 0 60px;
+        padding: 16px;
+    }
+    
 }
 
 .about .row .text .title h2 {
@@ -594,7 +608,7 @@ footer {
 
 @media (max-width: 1180px) {
     footer {
-        padding: 100px 0 20px 0;
+        padding: 50px 0 20px 0;
     }
 }
 
@@ -618,6 +632,13 @@ footer a {
     font-size: 16px;
     font-weight: 400;
     line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #C85ED7;
+    font-weight: 600;
+    border-bottom: 1px solid #C85ED7 ;
 }
 
 footer h5 {
@@ -635,13 +656,17 @@ footer .footer-contact .logo {
 }
 
 footer .footer-contact p {
-    color: rgba(0, 0, 0, 0.85);
-    font-family: Poppins;
+    color: rgba(0, 0, 0, 0.85); 
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
+}
+@media (min-width: 991px) {
+    footer .footer-contact p {
+        width: 75%;
+    }
 }
 
 footer .footer-contact div:first-of-type {
@@ -654,7 +679,7 @@ footer .copyright {
     margin-top: 117px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     footer .copyright {
         margin-top: 20px;
     }
@@ -670,6 +695,11 @@ footer .copyright p {
     line-height: 16px;
     letter-spacing: 0.257px;
     margin-top: 27px;
+}
+@media (max-width: 991px) {
+    footer .copyright p {
+    font-size:14px ;
+    }
 }
 
 footer .copyright svg {
