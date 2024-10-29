@@ -545,12 +545,23 @@ body {
     margin-bottom: 15px;
 }
 
+
 .about .row .text .title p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     margin-bottom: 48px;
     line-height: 160%;
     color: #585E71;
+}
+
+@media (max-width: 1355px) {
+    .about .row .text .title h2 {
+        font-size: 32px;
+    }
+
+    .about .row .text .title p {
+        font-size: 16px;
+    }
 }
 
 .about .row .feedback-text {
@@ -578,16 +589,19 @@ footer {
     position: relative;
     z-index: 1;
     background-color: #FFF5FE;
-    display: flex;
     padding: 100px 155px 20px 156px;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (max-width: 1180px) {
+    footer {
+        padding: 100px 0 20px 0;
+    }
 }
 
 footer .container {
     padding: 0;
-    padding-left:24px ;
-    padding-right:30px ;
+    padding-left: 24px;
+    padding-right: 30px;
 }
 
 footer ul li {
@@ -614,9 +628,7 @@ footer h5 {
     letter-spacing: 0.3px;
 }
 
-footer .footer-contact {
-    width: 296px;
-}
+
 
 footer .footer-contact .logo {
     margin-bottom: 36px;
@@ -642,6 +654,12 @@ footer .copyright {
     margin-top: 117px;
 }
 
+@media (max-width: 768px) {
+    footer .copyright {
+        margin-top: 20px;
+    }
+}
+
 footer .copyright p {
     color: #545454;
     text-align: center;
@@ -652,6 +670,10 @@ footer .copyright p {
     line-height: 16px;
     letter-spacing: 0.257px;
     margin-top: 27px;
+}
+
+footer .copyright svg {
+    width: 90%;
 }
 
 
