@@ -32,4 +32,22 @@ The JavaScript functions used in the website, such as `changeNav`, `changeNavDef
 
 Additionally, the CSS styles used in the website are not included in the provided code snippet. You will need to create a separate CSS file or include the styles within the HTML file.
 
-Feel free to customize the website further to suit your needs.
+**License**
+---------
+
+This template is licensed under the MIT License. You are free to use, modify, and distribute it as needed.
+
+**Author**
+---------
+
+Fares Elabasery 
+
+**Version**
+----------
+
+1.0.
+
+**Connect with Me**
+-------------------
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fares-elabasery/)
