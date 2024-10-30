@@ -60,6 +60,14 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+@media (max-width:768px) {
+    .navbar .brand-name {
+        font-size: 28px;
+        padding: 10px 16px 13px 8px;
+        margin: 0 !important;
+        border: none;
+    }
+}
 
 .navbar .links-section {
     font-size: 16px;
