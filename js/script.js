@@ -85,38 +85,57 @@ const shop = document.getElementById('shopLink');
 const contact = document.getElementById('contactLink');
 const category = document.getElementById('categoryLink');
 const navbarCollapse = document.getElementById('navbarNav')
-var links = { home, shop, contact, category }
-function hoverNav(obj) {
-    disActive()
-    addActiveClass(obj)
-    navbarCollapse.classList.remove('show')
-    return obj
-}
-function addActiveClass(obj) {
-    obj.classList.add('active');
-}
-function disActive() {
-    for (let link in links) {
-        links[link].classList.remove('active');
-    }
-}
-
-function scrollNav() {
-    if (scrollY > -1 && scrollY < 1166) {
-        disActive()
-        hoverNav(home);
-    } else if (scrollY > 1166 && scrollY < 1767) {
-        disActive()
-        hoverNav(category);
-        
-    } else if (scrollY > 1768 && scrollY < 3038) {
-        disActive()
-        hoverNav(shop);
-    }
-    else if (scrollY > 3038) {
-        disActive()
-        hoverNav(contact);
-    }
-}
 
 
+window.addEventListener('scroll', function () {
+    const sections = document.querySelectorAll('section');
+    const footer = document.querySelector('footer');
+    const scrollPosition = window.scrollY + window.innerHeight;
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        const footerTop = footer.offsetTop
+        const footerHeight = footer.offsetHeight
+        if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
+            // Get the corresponding navigation link
+            const navLinkId = section.id + 'Link';
+            const navLink = document.getElementById(navLinkId);
+
+            // Add hover effect to the navigation link
+            navLink.classList.add('active');
+            navbarCollapse.classList.remove('show')
+
+            // Remove hover effect from other navigation links
+            const otherLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            otherLinks.forEach(link => {
+                if (link.id !== navLinkId) {
+                    link.classList.remove('active');
+                }
+            });
+        } else if (scrollPosition >= footerTop && scrollPosition <= footerTop + footerHeight) {
+            contact.classList.add('active');
+            navbarCollapse.classList.remove('show')
+            otherLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            otherLinks.forEach(link => {
+                if (link.id !== contact.id) {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    });
+});
+
+
+
+function fixScroll() {
+    var sections = document.querySelectorAll('section')
+    sections.forEach((section) => {
+        var sectionTop = section.offsetTop;
+        if (section.id == 'category') {
+            sectionTop = section.offsetTop;
+            window.scrollTo(0, sectionTop - 100)
+        }
+    })
+}

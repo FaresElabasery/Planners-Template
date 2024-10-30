@@ -26,56 +26,57 @@
 
 </head>
 
-<body onscroll=scrollNav()>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="brand-name navbar-brand ms-4" href="#">Planners</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse links-section " id="navbarNav">
-                <ul class="navbar-nav gap-4 justify-content-between ">
-                    <li class="nav-item ms-2 overflow-hidden">
-                        <a onclick="hoverNav(this)" id="homeLink" class="nav-link active fw-medium" aria-current="page"
-                            href="#">Home</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a onclick="hoverNav(this)" id="categoryLink" class="nav-link fw-medium"
-                            href="#category">Category</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a onclick="hoverNav(this)" id="shopLink" class="nav-link fw-medium" href="#popular">Shop</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a onclick="hoverNav(this)" id="contactLink" class="nav-link fw-medium" href="#footer">Contact
-                            Us</a>
-                    </li>
-                </ul>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="brand-name navbar-brand ms-4" href="#">Planners</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse links-section " id="navbarNav">
+                    <ul class="navbar-nav gap-4 justify-content-between ">
+                        <li class="nav-item ms-2 overflow-hidden">
+                            <a id="homeLink" class="nav-link active fw-medium"
+                                aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a onclick="fixScroll()" id="categoryLink" class="nav-link fw-medium"
+                                >Category</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a id="shopLink" class="nav-link fw-medium"
+                                href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a id="contactLink" class="nav-link fw-medium"
+                                href="#contact">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" last-section collapse navbar-collapse justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav d-flex me-4 p-3">
+                        <li class="nav-item ms-1 p-1">
+                            <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)"
+                                    onmouseleave="changeNavDef(this,this.id)" src="images/search.svg" id="search"
+                                    alt="search"></a>
+                        </li>
+                        <li id="cart-box" class="nav-item ms-1 p-1 position-relative">
+                            <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)"
+                                    onmouseleave="changeNavDef(this,this.id)" src="images/cart.svg" id="cart"
+                                    alt="cart"></a>
+                        </li>
+                        <li class="nav-item ms-1 p-1">
+                            <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)"
+                                    onmouseleave="changeNavDef(this,this.id)" src="images/profile.svg" id="profile"
+                                    alt="About"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class=" last-section collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav d-flex me-4 p-3">
-                    <li class="nav-item ms-1 p-1">
-                        <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)"
-                                onmouseleave="changeNavDef(this,this.id)" src="images/search.svg" id="search"
-                                alt="search"></a>
-                    </li>
-                    <li id="cart-box" class="nav-item ms-1 p-1 position-relative">
-                        <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)"
-                                onmouseleave="changeNavDef(this,this.id)" src="images/cart.svg" id="cart"
-                                alt="cart"></a>
-                    </li>
-                    <li class="nav-item ms-1 p-1">
-                        <a class="nav-link p-1" href="#"><img onmouseenter="changeNav(this,this.id)"
-                                onmouseleave="changeNavDef(this,this.id)" src="images/profile.svg" id="profile"
-                                alt="About"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="hero d-flex flex-column justify-content-center">
+        </nav>
+    <section id="home" class="hero d-flex flex-column justify-content-center">
 
         <div class="content ">
             <div class="text">
@@ -85,7 +86,7 @@
             <a href="#popular" class="rounded-pill">SHOP NOW</a>
 
     </section>
-    <section class="details">
+    <section id="details" class="details">
         <div class="container">
             <div class="row content align-items-center">
                 <div class=" col-lg-5">
@@ -131,7 +132,7 @@
                     </div>
                 </div>
     </section>
-    <section id="popular" class="popular mt-2">
+    <section id="shop" class="popular mt-2">
         <div class="container">
             <div class="main-title mb-5 text-center">
                 <h2 class="text-center">Popular Planners</h2>
@@ -251,7 +252,8 @@
             </div>
         </div>
     </section>
-    <footer id="footer">
+    <footer>
+        <section  id="contact">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-lg-4 col-md-6 col-sm-6 pt-5 text-center text-lg-start">
@@ -319,6 +321,7 @@
                 <p>Journal with us © Planners 2024. All right reserved</p>
             </div>
         </div>
+    </section>
     </footer>
     <!-- main js file -->
     <script src="js/script.js"></script>
