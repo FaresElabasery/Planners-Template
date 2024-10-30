@@ -73,8 +73,7 @@ body {
 }
 
 .navbar .links-section .active,
-.navbar .links-section a:hover,
-.navbar .links-section a:focus {
+.navbar .links-section a:hover {
     font-weight: 600;
     color: #C85ED7 !important;
     border-bottom: 4px solid #C85ED7;
@@ -107,7 +106,7 @@ body {
     right: 100;
     background-repeat: no-repeat;
     max-width: 100%;
-    height: calc(100vh - 88px);
+    height: calc(100vh - 80px);
 }
 
 @media (max-width:1024px) {
@@ -223,10 +222,6 @@ body {
 
     .details .content .text h2 {
         font-size: 32px;
-    }
-
-    .details img {
-        display: none;
     }
 
     .details .content .text p {

@@ -80,7 +80,43 @@ function addItem(obj) {
     i++
     document.documentElement.style.setProperty('--hovered-color', '#C85ED7');
 }
+const home = document.getElementById('homeLink');
+const shop = document.getElementById('shopLink');
+const contact = document.getElementById('contactLink');
+const category = document.getElementById('categoryLink');
+const navbarCollapse = document.getElementById('navbarNav')
+var links = { home, shop, contact, category }
+function hoverNav(obj) {
+    disActive()
+    addActiveClass(obj)
+    navbarCollapse.classList.remove('show')
+    return obj
+}
+function addActiveClass(obj) {
+    obj.classList.add('active');
+}
+function disActive() {
+    for (let link in links) {
+        links[link].classList.remove('active');
+    }
+}
 
-
+function scrollNav() {
+    if (scrollY > -1 && scrollY < 1166) {
+        disActive()
+        hoverNav(home);
+    } else if (scrollY > 1166 && scrollY < 1767) {
+        disActive()
+        hoverNav(category);
+        
+    } else if (scrollY > 1768 && scrollY < 3038) {
+        disActive()
+        hoverNav(shop);
+    }
+    else if (scrollY > 3038) {
+        disActive()
+        hoverNav(contact);
+    }
+}
 
 

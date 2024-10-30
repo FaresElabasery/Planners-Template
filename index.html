@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body onscroll=scrollNav()>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
@@ -38,16 +38,19 @@
             <div class="collapse navbar-collapse links-section " id="navbarNav">
                 <ul class="navbar-nav gap-4 justify-content-between ">
                     <li class="nav-item ms-2 overflow-hidden">
-                        <a class="nav-link active fw-medium" aria-current="page" href="#">Home</a>
+                        <a onclick="hoverNav(this)" id="homeLink" class="nav-link active fw-medium" aria-current="page"
+                            href="#">Home</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link fw-medium" href="#popular">Shop</a>
+                        <a onclick="hoverNav(this)" id="categoryLink" class="nav-link fw-medium"
+                            href="#category">Category</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link fw-medium" href="#footer">Contact Us</a>
+                        <a onclick="hoverNav(this)" id="shopLink" class="nav-link fw-medium" href="#popular">Shop</a>
                     </li>
                     <li class="nav-item ms-3">
-                        <a class="nav-link fw-medium" href="#footer">Our Polices</a>
+                        <a onclick="hoverNav(this)" id="contactLink" class="nav-link fw-medium" href="#footer">Contact
+                            Us</a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +105,7 @@
         </div>
 
     </section>
-    <section class="cagetory mt-5">
+    <section id="category" class="cagetory mt-5">
         <div class="container">
             <div class="main-title text-center">
                 <h2 class="text-center ">Browse By Category</h2>
@@ -261,7 +264,7 @@
                         </div>
                         <div>
                             <img src="images/phone.svg" alt="phone logo">
-                            <a href="phone:+201207286573">+201207286573</a>
+                            <a href="tel:+201207286573">+201207286573</a>
                         </div>
                     </div>
                 </div>
