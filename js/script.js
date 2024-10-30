@@ -103,29 +103,34 @@ window.addEventListener('scroll', function () {
             const navLinkId = section.id + 'Link';
             const navLink = document.getElementById(navLinkId);
 
-            // Add hover effect to the navigation link
-            navLink.classList.add('active');
-            navbarCollapse.classList.remove('show')
-
-            // Remove hover effect from other navigation links
-            const otherLinks = document.querySelectorAll('.navbar-nav .nav-link');
-            otherLinks.forEach(link => {
-                if (link.id !== navLinkId) {
-                    link.classList.remove('active');
-                }
-            });
+            if (navLink) {
+                console.log(section.id )
+                // Add hover effect to the navigation link
+                navLink.classList.add('active');
+                navbarCollapse.classList.remove('show')
+                // Remove hover effect from other navigation links
+                const otherLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                otherLinks.forEach(link => {
+                    if (link.id !== navLinkId) {
+                        link.classList.remove('active');
+                    }
+                });
+            }
         } else if (scrollPosition >= footerTop && scrollPosition <= footerTop + footerHeight) {
-            contact.classList.add('active');
-            navbarCollapse.classList.remove('show')
-            otherLinks = document.querySelectorAll('.navbar-nav .nav-link');
-            otherLinks.forEach(link => {
-                if (link.id !== contact.id) {
-                    link.classList.remove('active');
-                }
-            });
+            if (contact) {
+                contact.classList.add('active');
+                navbarCollapse.classList.remove('show')
+                otherLinks = document.querySelectorAll('.navbar-nav .nav-link');
+                otherLinks.forEach(link => {
+                    if (link.id !== contact.id) {
+                        link.classList.remove('active');
+                    }
+                });
+            }
         }
     });
 });
+
 
 
 
